@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+    box-sizing: border-box;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    border: none;
+    margin: 5px;
+    padding: 5px;
+
+    text-decoration: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 17px;
+}
+
+a {
+    color: blue;
+    cursor: pointer;
+}
+
+a:not([href]) {
+    color: red;
+}
+
+a:visited {
+    color: ;
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
