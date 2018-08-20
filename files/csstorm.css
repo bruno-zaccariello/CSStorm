@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import './css/buttons.css';
+@import './css/navbar.css';
 
 * {
     box-sizing: border-box;
@@ -10,6 +12,10 @@
     padding: 5px;
 
     text-decoration: none;
+}
+
+*:focus {
+    outline: none;
 }
 
 html, body {
@@ -46,18 +52,18 @@ a {
     cursor: pointer;
 }
 
-a:not([href]) {
-    color: red;
-}
-
 a:visited {
-    color: ;
+    color: rgb(70, 92, 95);
 }
 
 a:hover {
-
+    color: lightskyblue;
 }
 
 a:active {
+    color: rgb(107, 160, 194);
+}
 
+a:not([href]) {
+    color: red;
 }
