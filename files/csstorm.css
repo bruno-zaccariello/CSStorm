@@ -1,23 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import './css/universal.css';
 @import './css/buttons.css';
 @import './css/navbar.css';
 @import './css/table.css'; 
-
-* {
-    box-sizing: border-box;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
-
-    border: none;
-    margin: 5px;
-    padding: 5px;
-
-    text-decoration: none;
-}
-
-*:focus {
-    outline: none;
-}
+@import './css/forms.css'; 
 
 html, body {
     margin: 0;
@@ -67,4 +53,14 @@ a:active {
 
 a:not([href]) {
     color: red;
+}
+
+address {
+    font-style: normal;
+    line-height: inherit;
+}
+
+.md_spacing {
+    height: 20px;
+    width: 100%;
 }

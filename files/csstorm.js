@@ -13,4 +13,8 @@ $(document).ready(function () {
         }
     });
 
+    $(document).find('spacer').each(function () {
+        $(this).replaceWith('<div class="md_spacing"></div>');
+    })
+
 })

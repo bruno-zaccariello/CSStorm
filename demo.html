@@ -2,14 +2,22 @@
 
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" type="text/css" href="./files/csstorm.css">
         <script src="./files/csstorm.js"></script>
+    
+        <style>
+            .nav_item {
+                width: 80px;
+            }
+        </style>
+    
     </head>
 
     <body>
 
-        <header class="navbar">
+        <header class="navbar nb_sticky">
             
                 <div class="nav_item dropdown">Item1
                     <div class="dd_holder">
@@ -18,16 +26,17 @@
                         <div>Subitem3</div>    
                     </div>
                 </div>
-
+                
                 <div class="nav_item nav_right">Item2</div>
                 <div class="nav_item">Item3</div>
                 <div class="nav_item">Item4</div>
+
         </header>
 
         <div size=";100px">
         </div>
 
-        <h1>Heading 1</h1>
+        <h1>Headings and paragraph</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
         <h4>Heading 4</h4>
@@ -37,6 +46,8 @@
             Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Cevadis im ampola pa arma uma pindureta. In elementis mé pra quem é amistosis quis leo. Atirei o pau no gatis, per gatis num morreus.
         </p>
 
+        <h2>Links</h2>
+
         <a href="#">
             Link #
         </a>
@@ -44,6 +55,8 @@
         <a>
             Link No Href
         </a>
+
+        <h2> Buttons </h2>
 
         <button>
             This is button
@@ -66,13 +79,31 @@
         </button>
 
         <div style="width: 400px;display: inline-block;">
-            <button class="expansive">
+            <button class="expandable">
                 This is button
             </button>
         </div>
 
-        <table>
+        <input type="button" value="This is button">
 
+        <input type="button" class="confirm" value="confirm">
+
+        <input type="button" class="cancel" value="cancel">
+
+        <input type="button" class="cf_confirm" value="cf_confirm">
+
+        <input type="button" class="cf_cancel" value="cf_cancel">
+
+        <div style="width: 400px;display: inline-block;">
+            <input type="button" class="expandable" value="expandable button">
+        </div>
+
+        <h2> Tables </h2>
+
+        <table class="ln_border hv">
+            <caption>
+                Sample caption for a table.Ln_border.hv
+            </caption>
             <thead>
                 <tr>
                     <th>This</th>
@@ -82,18 +113,55 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>These</td>
-                    <td>Are</td>
-                    <td>Infos</td>
+                    <td>This</td>
+                    <td>Is</td>
+                    <td>Table</td>
                 </tr>
                 <tr>
                     <td>These</td>
                     <td>Are</td>
-                    <td>Infos</td>
+                    <td>Cells</td>
                 </tr>
             </tbody>
 
         </table>
+
+        <h2> Forms </h2>
+
+        <form>
+            <fieldset>
+                <legend> User Info </legend>
+                <label for="username">Nome de Usuário</label>
+                <input name="username"/>
+
+                <label for="estado">Estado</label>
+                <select name="estado">
+                    <option value="sp">Sampa</option>
+                    <option value="rj">Rio de Janeiro</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                    
+                    <legend> Other Info </legend>
+                    
+                    <label>
+                        <input type=radio name="residencia">Casa
+                    </label>
+                    <label>
+                        <input type=radio name="residencia">Apto.
+                    </label>
+
+                    <br/>
+
+                    <label>
+                        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+                    </label>
+                    <label>
+                        <input type="checkbox" name="vehicle2" value="Car"> I have a car
+                    </label>
+                
+                </fieldset>
+        </form>
 
     </body>
 

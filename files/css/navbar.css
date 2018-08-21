@@ -3,8 +3,12 @@
     flex-flow: row nowrap;
 }
 
-.nav_item {
-    width: 80px;
+.nb_sticky {
+    position: sticky;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
 }
 
 .dropdown .dd_holder {
