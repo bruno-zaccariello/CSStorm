@@ -5,9 +5,10 @@ $(document).ready(function () {
         var w = dimensions[0]
         var h = dimensions[1]
 
-        if (h != none && h != 0) {
+        if (w != null && w != 0) {
             $(this).width(dimensions[0])
-        } else {
+        } 
+        if (h != null && h != 0) {
             $(this).height(dimensions[1])
         }
     });

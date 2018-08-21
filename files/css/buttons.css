@@ -4,6 +4,7 @@ button {
     border-radius: 3px;
     font-size: 15px;
     height: 32px;
+    transition: .3s;
     width: 120px;
 }
 
@@ -19,20 +20,44 @@ button:active {
 
 button.confirm:hover {
     border-color: green;
-    transition: .1s;
 }
 
 button.cancel:hover {
     border-color: red;
-    transition: .1s;
 }
 
 /* Botão que se expande ao passar o mouse por cima */
 
-button.expansive {
-    transition: .3s;
-}
-
 button.expansive:hover {
     width: 100%;
+}
+
+/* Botões coloridos */
+
+button.cf_confirm {
+    border-color: green;
+}
+
+button.cf_confirm:hover {
+    background-color: forestgreen;
+    border-color: black;
+}
+
+button.cf_confirm:active {
+    background-color: rgba(0,155,0,0.1);
+    border-color: green;
+}
+
+button.cf_cancel {
+    border-color: red;
+}
+
+button.cf_cancel:hover {
+    background-color: red;
+    border-color: black;
+}
+
+button.cf_cancel:active {
+    background-color: rgba(155,0,0,0.1);
+    border-color: red;
 }

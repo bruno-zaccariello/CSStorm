@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav_item {
+    width: 80px;
+}
+
+.dropdown .dd_holder {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dd_holder {
+    display: block;
+}
+
+.nav_right {
+    margin-left: auto;
+}
+
+.nav_left {
+    margin-right: auto;
+}
